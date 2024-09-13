@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.date.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.time.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+
+    <style>
+        #videos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .video {
+            margin: 10px;
+        }
+
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="sidebar close d-none d-sm-block">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://placehold.co/300x300" alt="">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">CodingLab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon "></i>
+                    <input type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt icon"></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bell icon"></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-pie-chart-alt icon"></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-heart icon"></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-wallet icon"></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch">
+
+                        </span>
+                    </div>
+
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- titulo do tutorial -->
+            <div class="col-xs-12 col-lg-6">
+                <!-- computador -->
+                <h2 class="titulo-tutorial d-none d-sm-block">Titulo do tutorial</h2>
+                <!-- celular -->
+                 <center>
+                    <h2 class="titulo-tutorial-cllr d-block d-sx-none d-md-none">Titulo do tutorial</h2>
+                 </center>
+             <br>
+             <!-- introdução -->
+              <!-- compuador -->
+              <p class="texto-introducao d-none d-sm-block">Bem-vindo ao nosso tutorial! Hoje, vamos explorar [assunto do tutorial] de maneira simples e eficaz. Seja você um iniciante ou alguém que já tem alguma experiência, este vídeo foi feito para guiá-lo passo a passo. Vamos cobrir tudo o que você precisa saber, desde os conceitos básicos até as dicas avançadas, para que você possa [objetivo do tutorial]. Prepare-se para aprender e dominar [assunto] com confiança! Vamos começar?</p>
+             <!-- celular -->
+             <p class="texto-introducao-cllr d-block d-sx-none d-md-none">Bem-vindo ao nosso tutorial! Hoje, vamos explorar [assunto do tutorial] de maneira simples e eficaz. Seja você um iniciante ou alguém que já tem alguma experiência, este vídeo foi feito para guiá-lo passo a passo. Vamos cobrir tudo o que você precisa saber, desde os conceitos básicos até as dicas avançadas, para que você possa [objetivo do tutorial]. Prepare-se para aprender e dominar [assunto] com confiança! Vamos começar?</p>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="row">
+                    <!-- video tutorial -->
+                     <!-- computador -->
+                    <iframe class="video-tutorial d-none d-sm-block" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- celular -->
+                    <iframe class="video-tutorial-cllr d-block d-sx-none d-md-none" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="row">
+                    <!-- Coração -->
+                    <!-- computador -->
+                    <i id="heartIconDesktop" class="far fa-heart heart-desktop d-none d-sm-block"></i>
+
+                    <!-- celular -->
+                    <i class="far fa-comment-dots comentario d-none d-sm-block"  data-toggle="modal" data-target="#exampleModal2"></i>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Formulário de Comentário</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <form id="commentForm2">
+                                <div class="form-group">
+                                <label for="comment2">Comentário:</label>
+                                <textarea class="form-control" id="comment2" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Comentário -->
+
+                    <!-- computador -->
+                    <i id="heartIconMobile" class="far fa-heart heart-mobile d-block d-sx-none d-md-none"></i>
+
+                    <!-- celular -->
+                    <i class="far fa-comment-dots comentario-cllr d-block d-sx-none d-md-none" id="openModal" data-toggle="modal" data-target="#exampleModal"></i>
+                     <!-- Modal -->
+                     <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel2">Formulário de Comentário</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <form id="commentForm2">
+                                <div class="form-group">
+                                <label for="comment2">Comentário:</label>
+                                <textarea class="form-control" id="comment2" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Estrelas -->
+                    <!-- computador -->
+                    <div class="star-rating d-none d-sm-block">
+                        <i class="far fa-star star estrelas" data-index="1"></i>
+                        <i class="far fa-star star" data-index="2"></i>
+                        <i class="far fa-star star" data-index="3"></i>
+                        <i class="far fa-star star" data-index="4"></i>
+                        <i class="far fa-star star" data-index="5"></i>
+                    </div>
+                    <!-- celular -->
+                    <div class="star-rating d-block d-sx-none d-md-none">
+                        <i class="far fa-star star estrelas-cllr" data-index="1"></i>
+                        <i class="far fa-star star" data-index="2"></i>
+                        <i class="far fa-star star" data-index="3"></i>
+                        <i class="far fa-star star" data-index="4"></i>
+                        <i class="far fa-star star" data-index="5"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-lg-6">
+                <!-- computador -->
+                <div class="tab-section d-none d-sm-block">
+                    <div class="tabs">
+                        <button class="tab-button active" onclick="showTabContent('ferramentas-desktop')">Ferramentas</button>
+                        <button class="tab-button" onclick="showTabContent('passo-a-passo-desktop')">Passo a passo</button>
+                    </div>
+                    <div id="ferramentas-desktop" class="tab-content">
+                        <ul class="itens">
+                            <li>Chave de fenda ou chave Philips (dependendo do modelo do chuveiro)</li>
+                            <li>Alicate de bico</li>
+                            <li>Fita isolante</li>
+                            <li>Resistência de reposição compatível com o modelo do seu chuveiro</li>
+                            <li>Luvas de proteção (opcional)</li>
+                        </ul>
+                    </div>
+                    <div id="passo-a-passo-desktop" class="tab-content" style="display:none;">
+                        <ol class="passo-a-passo">
+                            <li><h6 class="subtitulo">Desligue a Energia:</h6> Desligue o disjuntor correspondente ao chuveiro no quadro de energia elétrica para evitar choques. Certifique-se de que a energia está desligada.</li>
+                            <li><h6 class="subtitulo">Remova a Tampa do Chuveiro:</h6> Utilize a chave de fenda ou chave Philips para retirar os parafusos da tampa do chuveiro. Dependendo do modelo, você pode precisar desencaixar a tampa puxando com cuidado.</li>
+                            <li><h6 class="subtitulo">Localize a Resistência:</h6> Com a tampa removida, localize a resistência que geralmente fica na parte central do chuveiro. Ela é conectada aos terminais elétricos.</li>
+                            <li><h6 class="subtitulo">Desconecte a Resistência Queimada:</h6> Use o alicate de bico para desconectar a resistência queimada dos terminais. Lembre-se de anotar ou memorizar a forma como os fios estão conectados, pois a nova resistência deve ser colocada da mesma maneira.Instale a Nova Resistência: Coloque a nova resistência, conectando-a nos terminais exatamente como a antiga estava posicionada. Verifique se os fios estão bem presos para garantir o funcionamento seguro.</li>
+                            <li><h6 class="subtitulo">Instale a Nova Resistência:</h6> Coloque a nova resistência, conectando-a nos terminais exatamente como a antiga estava posicionada. Verifique se os fios estão bem presos para garantir o funcionamento seguro.</li>
+                            <li><h6 class="subtitulo">Recoloque a Tampa do Chuveiro:</h6> Recoloque a tampa do chuveiro e prenda os parafusos com a chave de fenda ou chave Philips. Certifique-se de que a tampa está bem ajustada.</li>
+                            <li><h6 class="subtitulo">Ligue a Energia:</h6> Volte ao quadro de energia e religue o disjuntor do chuveiro.</li>
+                            <li><h6 class="subtitulo">Teste o Chuveiro:</h6> Abra o registro do chuveiro e teste a função de aquecimento. Se a água aquecer normalmente, a substituição foi bem-sucedida.</li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- celular -->
+                <div class="tab-section d-block d-sx-none d-md-none">
+                    <div class="tabs">
+                        <button class="tab-button-mobile active" onclick="showTabContent('ferramentas-mobile')">Ferramentas</button>
+                        <button class="tab-button-mobile como-fazer-cllr" onclick="showTabContent('passo-a-passo-mobile')">Passo a passo</button>
+                    </div>
+                    <div id="ferramentas-mobile" class="tab-content">
+                        <ul class="itens-cllr">
+                            <li>Chave de fenda ou chave Philips (dependendo do modelo do chuveiro)</li>
+                            <li>Alicate de bico</li>
+                            <li>Fita isolante</li>
+                            <li>Resistência de reposição compatível com o modelo do seu chuveiro</li>
+                            <li>Luvas de proteção (opcional)</li>
+                        </ul>
+                    </div>
+                    <div id="passo-a-passo-mobile" class="tab-content" style="display:none;">
+                        <ol class="passo-a-passo-cllr">
+                            <li><h6 class="subtitulo">Desligue a Energia:</h6> Desligue o disjuntor correspondente ao chuveiro no quadro de energia elétrica para evitar choques. Certifique-se de que a energia está desligada.</li>
+                            <li><h6 class="subtitulo">Remova a Tampa do Chuveiro:</h6> Utilize a chave de fenda ou chave Philips para retirar os parafusos da tampa do chuveiro. Dependendo do modelo, você pode precisar desencaixar a tampa puxando com cuidado.</li>
+                            <li><h6 class="subtitulo">Localize a Resistência:</h6> Com a tampa removida, localize a resistência que geralmente fica na parte central do chuveiro. Ela é conectada aos terminais elétricos.</li>
+                            <li><h6 class="subtitulo">Desconecte a Resistência Queimada:</h6> Use o alicate de bico para desconectar a resistência queimada dos terminais. Lembre-se de anotar ou memorizar a forma como os fios estão conectados, pois a nova resistência deve ser colocada da mesma maneira.Instale a Nova Resistência: Coloque a nova resistência, conectando-a nos terminais exatamente como a antiga estava posicionada. Verifique se os fios estão bem presos para garantir o funcionamento seguro.</li>
+                            <li><h6 class="subtitulo">Instale a Nova Resistência:</h6> Coloque a nova resistência, conectando-a nos terminais exatamente como a antiga estava posicionada. Verifique se os fios estão bem presos para garantir o funcionamento seguro.</li>
+                            <li><h6 class="subtitulo">Recoloque a Tampa do Chuveiro:</h6> Recoloque a tampa do chuveiro e prenda os parafusos com a chave de fenda ou chave Philips. Certifique-se de que a tampa está bem ajustada.</li>
+                            <li><h6 class="subtitulo">Ligue a Energia:</h6> Volte ao quadro de energia e religue o disjuntor do chuveiro.</li>
+                            <li><h6 class="subtitulo">Teste o Chuveiro:</h6> Abra o registro do chuveiro e teste a função de aquecimento. Se a água aquecer normalmente, a substituição foi bem-sucedida.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="videos-relacionados">Videos Relacionados</h1>
+        <div style="position: relative;">
+          <div id="searchContainer" style="position: absolute; right: 0; display: flex; align-items: center; gap: 10px;">
+              <input type="text" id="searchQuery" placeholder="Digite uma palavra-chave">
+              <button onclick="searchVideos()"><i class="fas fa-search"></i></button>
+          </div>
+      </div>
+      <div id="videos"></div>
+
+        </div>
+
+        
+
+     
+       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/picker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/picker.date.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.0/translations/pt_BR.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

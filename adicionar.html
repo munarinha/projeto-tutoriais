@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Tutorial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.css">
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.date.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/themes/default.time.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/adicionar.css">
+</head>
+<body>
+
+    <nav class="sidebar close d-none d-sm-block">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://placehold.co/300x300" alt="">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">CodingLab</span>
+                    <span class="profession">Web developer</span>
+                </div>
+            </div>
+
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="bx bx-search icon "></i>
+                    <input type="search" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bar-chart-alt icon"></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-bell icon"></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-pie-chart-alt icon"></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-heart icon"></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class="bx bx-wallet icon"></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon"></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch">
+
+                        </span>
+                    </div>
+
+                </li>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Seção Principal -->
+  <div class="container mt-5">
+    <h1 class="mb-4 text-center titulo-adicionar">Adicionar Novo Tutorial</h1>
+    
+    <!-- Seção de Informações do Tutorial -->
+    <div class="form-section">
+      <h3 class="info-tuto">Informações do Tutorial</h3>
+      <hr class="hr">
+      <form id="tutorialForm">
+        <div class="form-group">
+          <label for="tituloTutorial">Título do Tutorial</label>
+          <input type="text" class="form-control" id="tituloTutorial" placeholder="Ex: Como consertar uma geladeira" required>
+        </div>
+        <div class="form-group">
+          <label for="descricaoTutorial">Descrição</label>
+          <textarea class="form-control" id="descricaoTutorial" rows="3" placeholder="Descreva brevemente o que será abordado" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="categoria">Categoria</label>
+          <select class="form-control" id="categoria" required>
+            <option disabled selected>Selecione uma categoria</option>
+            <option value="pintura">Pintura</option>
+            <option value="eletrônicos">Eletrônicos</option>
+            <option value="hidráulica">Hidráulica</option>
+            <option value="jardinagem">Jardinagem</option>
+            <option value="alvenaria">Alvenaria</option>
+            <option value="automacao">Automação</option>
+            <!-- Adicione outras categorias relevantes -->
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <!-- Seção de Upload de Vídeo -->
+    <div class="form-section">
+      <h3 class="info-tuto">Upload de Vídeo</h3>
+      <hr class="hr">
+      <form id="videoUploadForm">
+        <div class="form-group">
+          <label for="videoTutorial">Escolha o vídeo</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="videoTutorial" accept="video/*" required>
+            <label class="custom-file-label" for="videoTutorial">Escolher vídeo...</label>
+          </div>
+          <small class="form-text text-muted">Formato suportado: MP4, AVI, etc. Tamanho máximo: 100MB.</small>
+        </div>
+      </form>
+    </div>
+
+    <!-- Seção de Instruções Detalhadas -->
+    <div class="form-section">
+      <h3 class="info-tuto">Instruções Detalhadas</h3>
+      <hr class="hr">
+      <form id="instructionForm">
+        <div class="form-group">
+          <label for="passosTutorial">Passo a passo</label>
+          <textarea class="form-control" id="passosTutorial" rows="5" placeholder="Descreva cada passo do tutorial" required></textarea>
+        </div>
+      </form>
+    </div>
+
+    <!-- Botão de Enviar -->
+    <div class="text-center">
+      <button type="submit" form="tutorialForm" class="btn btn-primary btn-lg botao-enviar">Enviar Tutorial</button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      © 2024 Seu Site de Tutoriais: 
+      <a class="text-dark" href="#">Termos de uso</a> |
+      <a class="text-dark" href="#">Contato</a>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/bs4/dt-1.13.6/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/picker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/picker.date.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.0/translations/pt_BR.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
