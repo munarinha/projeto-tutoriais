@@ -147,8 +147,6 @@ $(document).ready(function() {
         $('#exampleModal2').modal('hide');
       });
 
-    //Placeholder e botao de pesquisa
-
    // Efeito de deslizamento ao carregar a página
     $("#searchContainer").hide().slideDown(1000); // Desliza para baixo em 1 segundo
 
